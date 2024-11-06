@@ -6,12 +6,14 @@ import cs112.lab09.models.RevisedHistoricalEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
+import static cs112.lab09.Constants.HISTORICAL_DATA;
+
 public class CityController {
     @FXML
     Label locationLabel;
 
     public void initData(Constants.Event eventIndex) {
-        String[] data = Historical_DATA[eventIndex.ordinal()];
+        String[] data = HISTORICAL_DATA[eventIndex.ordinal()];
         RevisedHistoricalEvent event = new RevisedHistoricalEvent(data);
         locationLabel.setText(event.getLocation());
     }

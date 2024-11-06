@@ -51,8 +51,8 @@
       </Pane>
       <HBox fx:id="hBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
          <children>
-            <Button fx:id="startBTN" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Start" />
-            <Button fx:id="quitBTN" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="Quit" />
+            <Button fx:id="startBTN" alignment="CENTER" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="25.0" prefWidth="54.0" text="Start" />
+            <Button fx:id="quitBTN" alignment="CENTER" mnemonicParsing="false" onAction="#handleQuitButton" prefHeight="25.0" prefWidth="54.0" text="Quit" />
          </children>
       </HBox>
    </children>
