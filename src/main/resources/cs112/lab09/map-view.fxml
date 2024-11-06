@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="cs112.lab09.controllers.MapController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:controller="cs112.lab09.controllers.MapController" prefHeight="550.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="550.0" prefWidth="819.0">
+         <children>
+            <ImageView fx:id="mapImage" fitHeight="518.0" fitWidth="780.0" layoutX="20.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Red-Summer.jpg" />
+               </image>
+            </ImageView>
+            <Button id="sanFranciscoCaBtn" alignment="CENTER" layoutX="20.0" layoutY="229.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="81.0" text="San Francisco, California" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="bisbeeAzBtn" layoutX="152.0" layoutY="389.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="48.0" text="Bisbee, Arizona" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

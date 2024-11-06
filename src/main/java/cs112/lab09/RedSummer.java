@@ -11,6 +11,7 @@ import java.io.IOException;
 import static cs112.lab09.Constants.*;
 
 public class RedSummer extends Application {
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(RedSummer.class.getResource(MAIN_VIEW_RESOURCE));
