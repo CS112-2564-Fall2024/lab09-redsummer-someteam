@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.ImageView?>
@@ -9,25 +12,35 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <SplitPane dividerPositions="0.5505952380952381" prefHeight="358.0" prefWidth="338.0">
+      <SplitPane dividerPositions="0.5" prefHeight="358.0" prefWidth="338.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <ImageView fitHeight="358.0" fitWidth="182.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="imageView" fitHeight="188.0" fitWidth="165.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="356.0" prefWidth="187.0">
                <children>
-                  <VBox prefHeight="356.0" prefWidth="148.0">
+                  <VBox prefHeight="356.0" prefWidth="165.0">
                      <children>
-                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="157.0" text="Location" />
-                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="157.0" text="Date" />
-                        <Label prefHeight="100.0" prefWidth="148.0" text="Description" />
+                        <Label id="locationLabel" alignment="CENTER" prefHeight="17.0" prefWidth="157.0" text="Location" />
+                        <Label id="dateLabel" alignment="CENTER" prefHeight="17.0" prefWidth="157.0" text="Date" />
+                        <Label id="descriptionLabel" prefHeight="100.0" prefWidth="148.0" text="Description" wrapText="true">
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding></Label>
+                        <Label id="revisedDescriptionLabel" prefHeight="193.0" prefWidth="148.0" text="Revised Description" wrapText="true">
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                        <Hyperlink id="hyperlinkReference " prefHeight="43.0" prefWidth="148.0" text="Hyperlink" />
                      </children>
                   </VBox>
                </children>
             </AnchorPane>
         </items>
       </SplitPane>
+      <Button id="closeButton" accessibleRoleDescription="handleCloseButton" layoutX="152.0" layoutY="367.0" mnemonicParsing="false" text="Close" />
    </children>
 </Pane>
