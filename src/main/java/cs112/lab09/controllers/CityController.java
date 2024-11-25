@@ -17,4 +17,14 @@ public class CityController {
         RevisedHistoricalEvent event = new RevisedHistoricalEvent(data);
         locationLabel.setText(event.getLocation());
     }
+
+    public void setBisbee(String bee) {
+        // bee object
+        System.out.println(bee);
+    }
+
+    public void setSanFrancisco(String fran) {
+        // fran object
+        System.out.println(fran);
+    }
 }
