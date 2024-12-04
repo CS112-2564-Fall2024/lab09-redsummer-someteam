@@ -4,13 +4,30 @@ import cs112.lab09.Constants;
 import cs112.lab09.models.HistoricalEvent;
 import cs112.lab09.models.RevisedHistoricalEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
+
+import javax.swing.text.html.ImageView;
 
 import static cs112.lab09.Constants.HISTORICAL_DATA;
 
 public class CityController {
     @FXML
     Label locationLabel;
+    @FXML
+    Label dateLabel;
+    @FXML
+    Label descriptionLabel;
+    @FXML
+    Label revisedDescriptionLabel;
+    @FXML
+    ImageView imageView;
+    @FXML
+    Hyperlink hyperLinkReference;
+
+    public void closeButton() {
+
+    }
 
     public void initData(Constants.Event eventIndex) {
         String[] data = HISTORICAL_DATA[eventIndex.ordinal()];
