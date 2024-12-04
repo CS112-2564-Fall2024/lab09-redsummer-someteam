@@ -26,13 +26,13 @@ public class MapController {
     }
 
     public void sanFranciscoCaBtn() throws IOException {
-        sanFranciscoCaBtn(Event.SAN_FRANCISCO);
+        handleShowModel(Event.SAN_FRANCISCO);
     }
     public void bisbeeAzBtn() throws IOException {
-        bisbeeAzBtn(Event.BISBEE);
+        handleShowModel(Event.BISBEE);
     }
 
-    public void sanFranciscoCaBtn (Constants.Event eventIndex) throws IOException {
+    public void handleShowModel (Constants.Event eventIndex) throws IOException {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
 
@@ -40,20 +40,10 @@ public class MapController {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle(CITY_VIEW_TITLE);
-        CityController cityController = fxmlLoader.getController();
-        cityController.initData(eventIndex);
-        stage.show();
-    }
-    public void bisbeeAzBtn (Constants.Event eventIndex) throws IOException {
-        Stage stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(RedSummer.class.getResource(CITY_VIEW_RESOURCE));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.setTitle(CITY_VIEW_TITLE);
         CityController cityController = fxmlLoader.getController();
         cityController.initData(eventIndex);
+
         stage.show();
     }
 }

@@ -30,18 +30,18 @@ public class CityController {
     }
 
     public void initData(Constants.Event eventIndex) {
-        String[] data = HISTORICAL_DATA[eventIndex.ordinal()];
+        String[] data = Constants.HISTORICAL_DATA   [eventIndex.ordinal()];
         RevisedHistoricalEvent event = new RevisedHistoricalEvent(data);
         locationLabel.setText(event.getLocation());
     }
 
-    public void setBisbee(String bee) {
-        // bee object
-        System.out.println(bee);
-    }
-
-    public void setSanFrancisco(String fran) {
-        // fran object
-        System.out.println(fran);
-    }
+//    public void setBisbee(String bee) {
+//        // bee object
+//        System.out.println(bee);
+//    }
+//
+//    public void setSanFrancisco(String fran) {
+//        // fran object
+//        System.out.println(fran);
+//    }
 }

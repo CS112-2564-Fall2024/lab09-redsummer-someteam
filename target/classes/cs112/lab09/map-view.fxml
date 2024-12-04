@@ -16,7 +16,7 @@
                   <Image url="@../../images/Red-Summer.jpg" />
                </image>
             </ImageView>
-            <Button id="sanFranciscoCaBtn" alignment="CENTER" layoutX="20.0" layoutY="229.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="81.0" text="San Francisco, California" wrapText="true">
+            <Button fx:id="sanFranciscoCaBtn" alignment="CENTER" layoutX="20.0" layoutY="229.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="81.0" text="San Francisco, California" wrapText="true">
                <font>
                   <Font size="10.0" />
                </font>
